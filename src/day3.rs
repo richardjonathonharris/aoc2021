@@ -57,6 +57,7 @@ fn get_vals_in_string(string: String, most_frequent: bool) -> String {
 
 fn bit_criteria_search(input: &[String], greatest: bool) -> String {
   let mut search_path = "".to_string();
+  #[allow(unused_assignments)]
   let mut final_answer = "";
   loop {
     let re = Regex::new(&format!("^{}", search_path).to_string()).unwrap();
